@@ -124,7 +124,7 @@ Para la **validación cruzada entre equipos**, el proyecto utiliza **ngrok** par
 ngrok http 8080
 ```
 
-Esto genera una URL pública temporal como: `https://abc123.ngrok.io` que permite a otros equipos acceder a la API para las pruebas de validación cruzada.
+Esto genera una URL pública temporal como: `Al iniciar la clase...ngrok.io` que permite a otros equipos acceder a la API para las pruebas de validación cruzada.
 
 ## 📊 Endpoints Principales
 
@@ -166,7 +166,7 @@ mvn spring-boot:run
 
 ### Acceso a la Documentación
 - **Swagger UI (Local):** http://localhost:8080/swagger-ui.html
-- **Swagger UI (Ngrok):** https://your-ngrok-url.ngrok.io/swagger-ui.html
+- **Swagger UI (Ngrok):** Al iniciar la clase.../swagger-ui.html
 - **API Docs:** http://localhost:8080/v3/api-docs
 
 ### Para Validación Cruzada
