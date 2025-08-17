@@ -5,7 +5,7 @@
 		"description": "**Tiendario** es una API REST desarrollada con Spring Boot que proporciona una solución completa para la gestión de inventario de una tienda. El sistema permite administrar productos, categorías, proveedores, usuarios y realizar un seguimiento detallado de los movimientos de stock.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44061322",
-		"_collection_link": "https://juansarasi.postman.co/workspace/f038332d-030c-4d46-827f-0ab67c409b20/collection/44061322-01103436-42fb-4554-b45f-482ba1c5855d?action=share&source=collection_link&creator=44061322"
+		"_collection_link": "https://juansarasi.postman.co/workspace/Juan-Sarasi's-Workspace~f038332d-030c-4d46-827f-0ab67c409b20/collection/44061322-01103436-42fb-4554-b45f-482ba1c5855d?action=share&source=collection_link&creator=44061322"
 	},
 	"item": [
 		{
@@ -286,7 +286,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tipo\": \"SALIDA\",\r\n    \"cantidad\": 8,\r\n    \"fecha\": \"2025-07-13\",\r\n    \"producto\": {\"id\": 1},\r\n    \"usuario\": {\"id\": 4}\r\n}",
+							"raw": "{\r\n    \"tipo\": \"ENTRADA\",\r\n    \"cantidad\": 8,\r\n    \"fecha\": \"2025-08-17\",\r\n    \"producto\": {\"id\": 1},\r\n    \"usuario\": {\"id\": 4}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1111,16 +1111,15 @@
 	"variable": [
 		{
 			"key": "localhost",
-			"value": "localhost:8080"
+			"value": "http://localhost:8080"
 		},
 		{
 			"key": "ngrok",
-			"value": "https://1c69098b56ef.ngrok-free.app"
+			"value": "URL"
 		},
 		{
 			"key": "token",
 			"value": "",
-			"type": "string",
 			"description": {
 				"content": "",
 				"type": "text/plain"
