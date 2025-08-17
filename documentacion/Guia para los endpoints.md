@@ -1,5 +1,4 @@
 # 🚀 Guía de Validación Cruzada - Sistema Tiendario
-## Para Otros Equipos (18 de Agosto)
 
 ---
 
@@ -7,9 +6,9 @@
 
 ### ✅ Lo que necesitas tener:
 - **Postman** instalado en tu computadora
-- **Archivo** `tiendario_collection.json` (te lo proporcionamos)
+- **Archivo** descargar `tiendario_collection.json` (te lo proporcionamos)
 - **URL de ngrok** (te la proporcionamos el día de la validación)
-- **15-20 minutos** para realizar todas las pruebas
+- **20-30 minutos** para realizar todas las pruebas
 
 ---
 
@@ -49,21 +48,20 @@ Deberías ver en el panel izquierdo:
 ## 🌐 PASO 2: CONFIGURAR URL DE NGROK
 
 ### 2.1 Verificar variables de colección
-1. **Clic derecho** en "Tiendario API"
-2. **Seleccionar "Edit"**
-3. **Ir a pestaña "Variables"**
+1. **Seleccionar** en "Tiendario API [ngrok]"
+2. **Ir a pestaña "Variables"**
 
 ### 2.2 Variables disponibles
 Deberías ver:
 - **`localhost`**: `http://localhost:8080`
-- **`ngrok`**: `https://abc123.ngrok.io` (URL que te proporcionamos)
+- **`ngrok`**: `Al iniciar la clase...` (URL que te proporcionamos)
 - **`token`**: (vacío, se llena automáticamente)
 
 ### 2.3 ¿Necesitas cambiar la URL de ngrok?
 Si la URL de ngrok es diferente:
-1. **Editar variable `ngrok`**
-2. **Cambiar valor** por la nueva URL
-3. **Clic "Save"**
+1. **Cambiar valor "Initial value"** Donde dice `URL` por la nueva URL
+2. **Valor "Current value"** Se coloca automaticamente `Si no lo hace, coloca la URL manualmente`
+3. **Clic "Save" o CTRL + S**
 
 ---
 
@@ -91,7 +89,7 @@ Si la URL de ngrok es diferente:
 ```json
 {
   "nombre": "Dario",
-  "contrasena": "123456"
+  "contrasena": "112233"
 }
 ```
 
@@ -99,7 +97,7 @@ Si la URL de ngrok es diferente:
 ```json
 {
   "nombre": "Anthony",
-  "contrasena": "123456"
+  "contrasena": "445566"
 }
 ```
 
@@ -135,7 +133,7 @@ Si la URL de ngrok es diferente:
 
 **Resultado esperado:**
 - **Status:** 200 OK
-- **Response:** Lista de 3 usuarios (Juan, Dario, Anthony)
+- **Response:** Lista de 5 usuarios (Juan, Dario, Anthony, Ricardo, UserTest)
 
 ### 4.2 Verificar productos
 
@@ -204,7 +202,7 @@ Si la URL de ngrok es diferente:
 ```json
 {
   "nombre": "Dario",
-  "contrasena": "123456"
+  "contrasena": "112233"
 }
 ```
 
@@ -218,15 +216,11 @@ Si la URL de ngrok es diferente:
 2. **Body:**
 ```json
 {
-  "tipo": "ENTRADA",
-  "cantidad": 5,
-  "fecha": "2025-08-17T15:00:00.000Z",
-  "producto": {
-    "id": 1
-  },
-  "usuario": {
-    "id": 2
-  }
+    "tipo": "ENTRADA",
+    "cantidad": 8,
+    "fecha": "2025-08-17",
+    "producto": {"id": 1},
+    "usuario": {"id": 2}
 }
 ```
 3. **Clic "Send"**
@@ -308,14 +302,14 @@ Si la URL de ngrok es diferente:
 
 ## 🎯 TIEMPO ESTIMADO POR PASO
 
-- **Paso 1-2:** Importar y configurar (3 min)
-- **Paso 3:** Login inicial (2 min)
-- **Paso 4:** Pruebas básicas (5 min)
-- **Paso 5:** Pruebas de seguridad (3 min)
-- **Paso 6:** Movimientos stock (4 min)
-- **Paso 7:** Documentar (3 min)
+- **Paso 1-2:** Importar y configurar (5 min)
+- **Paso 3:** Login inicial (3 min)
+- **Paso 4:** Pruebas básicas (7 min)
+- **Paso 5:** Pruebas de seguridad (5 min)
+- **Paso 6:** Movimientos stock (5 min)
+- **Paso 7:** Documentar (5 min)
 
-**TOTAL: ~20 minutos**
+**TOTAL: ~30 minutos**
 
 ---
 
@@ -325,5 +319,3 @@ Si tienes problemas durante la validación:
 1. **Verificar** que el servidor esté corriendo (ngrok activo)
 2. **Revisar** que la URL de ngrok sea correcta
 3. **Comprobar** que el token sea válido (hacer login nuevamente)
-
-**¡Listo para la validación cruzada!** 🚀

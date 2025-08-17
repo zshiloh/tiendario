@@ -1,9 +1,8 @@
 # 📋 Endpoints Funcionales - Sistema Tiendario
-## (Con datos reales del sistema)
 
 ## 🌐 URLs Base
 - **Desarrollo Local:** `http://localhost:8080`
-- **Ngrok (Validación Cruzada):** `https://tu-url.ngrok.io`
+- **Ngrok:** `Colocar al iniciar la clase...`
 
 ---
 
@@ -23,7 +22,7 @@
 **Salida:** Login exitoso
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKdWFuIiwicm9sZSI6IkFETUlOSVNUUkFET1IiLCJpYXQiOjE2OTI5ODQwMDAsImV4cCI6MTY5Mjk4NzYwMH0.signature",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKdWFuIiwicm9sZSI6IkFETUlOSVNUUkFET1IiLCJpYXQiOjE2OTI5ODQwMDAsImV4cCI6MTY5Mjk4NzYwMH0.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKdWFuIiwicm9sZSI6IkFETUlOSVNUUkFET1IiLCJpYXQiOjE2OTI5ODQwMDAsImV4cCI6MTY5Mjk4NzYwMH0.6nyB2XEUBM-4_53CIKJBe_Vt6upW1C6igL7Ea2hHVyCwiz1EaGH_hOcpF3TkSfGp",
   "nombre": "Juan",
   "rol": "ADMINISTRADOR"
 }
@@ -37,7 +36,7 @@
 ```json
 {
   "nombre": "Dario",
-  "contrasena": "123456"
+  "contrasena": "112233"
 }
 ```
 **Salida:** Login exitoso
@@ -57,7 +56,7 @@
 ```json
 {
   "nombre": "Anthony",
-  "contrasena": "123456"
+  "contrasena": "445566"
 }
 ```
 **Salida:** Login exitoso
@@ -66,6 +65,26 @@
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
   "nombre": "Anthony",
   "rol": "VENDEDOR"
+}
+```
+
+## 4. Iniciar Sesión - Usuario Ricardo
+**URL:** `localhost:8080/login`  
+**Tipo:** POST  
+**Cabeceras:** Content-Type: application/json  
+**Ingreso:**
+```json
+{
+  "nombre": "Ricardo",
+  "contrasena": "778899"
+}
+```
+**Salida:** Login exitoso
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "nombre": "Ricardo",
+  "rol": "ADMINISTRADOR"
 }
 ```
 
@@ -226,18 +245,23 @@
 **Tipo:** GET  
 **Cabeceras:** Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ5...  
 **Ingreso:** (sin body)  
-**Salida:** Categorías existentes (ejemplo)
+**Salida:** Categorías existentes
 ```json
 [
   {
     "id": 1,
-    "nombre": "Electrónicos",
-    "descripcion": "Productos electrónicos y tecnológicos"
+    "nombre": "Bebidas",
+    "descripcion": "Líquidos para beber"
   },
   {
     "id": 2,
-    "nombre": "Oficina",
-    "descripcion": "Artículos de oficina y papelería"
+    "nombre": "Snacks",
+    "descripcion": "Productos para picar"
+  },
+  {
+    "id": 3,
+    "nombre": "Lacteos",
+    "descripcion": "Productos derivados de la leche"
   }
 ]
 ```
@@ -256,7 +280,7 @@
 **Salida:** Categoría creada
 ```json
 {
-  "id": 3,
+  "id": 4,
   "nombre": "Validación Cruzada",
   "descripcion": "Categoría para pruebas de otros equipos"
 }
@@ -271,25 +295,97 @@
 **Tipo:** GET  
 **Cabeceras:** Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ5...  
 **Ingreso:** (sin body)  
-**Salida:** Productos existentes (ejemplo)
+**Salida:** Productos existentes
 ```json
 [
   {
     "id": 1,
-    "nombre": "Laptop HP",
-    "descripcion": "Laptop HP Pavilion 15",
-    "stock": 15,
-    "precio": 2200.99,
+    "nombre": "Coca Cola",
+    "descripcion": "Bebida Gaseosa",
+    "stock": 17,
+    "precio": 2.5,
     "categoria": {
       "id": 1,
-      "nombre": "Electrónicos",
-      "descripcion": "Productos electrónicos y tecnológicos"
+      "nombre": "Bebidas",
+      "descripcion": "Líquidos para beber"
     },
     "proveedor": {
       "id": 1,
-      "nombre": "TechWorld",
-      "contacto": "ventas@techworld.com",
-      "direccion": "Av. Tecnología 123"
+      "nombre": "Proveedor Uno",
+      "contacto": "contacto@proveedoruno.com",
+      "direccion": "Calle Principal 123"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Papas Fritas",
+    "descripcion": "Bolsa de 100g",
+    "stock": 30,
+    "precio": 1.2,
+    "categoria": {
+      "id": 2,
+      "nombre": "Snacks",
+      "descripcion": "Productos para picar"
+    },
+    "proveedor": {
+      "id": 2,
+      "nombre": "Proveedor Dos",
+      "contacto": "contacto@proveedordos.com",
+      "direccion": "Av. Secundaria 456"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Leche entera",
+    "descripcion": "Litro de leche entera",
+    "stock": 20,
+    "precio": 3.0,
+    "categoria": {
+      "id": 3,
+      "nombre": "Lacteos",
+      "descripcion": "Productos derivados de la leche"
+    },
+    "proveedor": {
+      "id": 3,
+      "nombre": "Proveedor Tres",
+      "contacto": "contacto@proveedortres.com",
+      "direccion": "Av. Nueva 789"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Galletas Oreo",
+    "descripcion": "Galletas con crema sabor vainilla, paquete 154g",
+    "stock": 75,
+    "precio": 1.5,
+    "categoria": {
+      "id": 2,
+      "nombre": "Snacks",
+      "descripcion": "Productos para picar"
+    },
+    "proveedor": {
+      "id": 1,
+      "nombre": "Proveedor Uno",
+      "contacto": "contacto@proveedoruno.com",
+      "direccion": "Calle Principal 123"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Agua Mineral",
+    "descripcion": "Agua Mineral natural 500ml",
+    "stock": 50,
+    "precio": 1.0,
+    "categoria": {
+      "id": 1,
+      "nombre": "Bebidas",
+      "descripcion": "Líquidos para beber"
+    },
+    "proveedor": {
+      "id": 1,
+      "nombre": "Proveedor Uno",
+      "contacto": "contacto@proveedoruno.com",
+      "direccion": "Calle Principal 123"
     }
   }
 ]
@@ -300,24 +396,24 @@
 **Tipo:** GET  
 **Cabeceras:** Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ5...  
 **Ingreso:** (sin body)  
-**Salida:** Producto específico
+**Salida:** Producto Coca Cola
 ```json
 {
   "id": 1,
-  "nombre": "Laptop HP",
-  "descripcion": "Laptop HP Pavilion 15",
-  "stock": 15,
-  "precio": 2200.99,
+  "nombre": "Coca Cola",
+  "descripcion": "Bebida Gaseosa",
+  "stock": 17,
+  "precio": 2.5,
   "categoria": {
     "id": 1,
-    "nombre": "Electrónicos",
-    "descripcion": "Productos electrónicos y tecnológicos"
+    "nombre": "Bebidas",
+    "descripcion": "Líquidos para beber"
   },
   "proveedor": {
     "id": 1,
-    "nombre": "TechWorld",
-    "contacto": "ventas@techworld.com",
-    "direccion": "Av. Tecnología 123"
+    "nombre": "Proveedor Uno",
+    "contacto": "contacto@proveedoruno.com",
+    "direccion": "Calle Principal 123"
   }
 }
 ```
@@ -336,15 +432,21 @@
 [
   {
     "id": 1,
-    "nombre": "TechWorld",
-    "contacto": "ventas@techworld.com",
-    "direccion": "Av. Tecnología 123"
+    "nombre": "Proveedor Uno",
+    "contacto": "contacto@proveedoruno.com",
+    "direccion": "Calle Principal 123"
   },
   {
     "id": 2,
-    "nombre": "OfficeMax Peru",
-    "contacto": "info@officemax.pe",
-    "direccion": "Jr. Comercio 456"
+    "nombre": "Proveedor Dos",
+    "contacto": "contacto@proveedordos.com",
+    "direccion": "Av. Secundaria 456"
+  },
+  {
+    "id": 3,
+    "nombre": "Proveedor Tres",
+    "contacto": "contacto@proveedortres.com",
+    "direccion": "Av. Nueva 789"
   }
 ]
 ```
@@ -399,18 +501,37 @@
 **Salida:** Movimiento registrado (stock se actualiza automáticamente)
 ```json
 {
-  "id": 2,
+  "id": 13,
   "tipo": "SALIDA",
   "cantidad": 2,
   "fecha": "2025-08-17T15:00:00.000+00:00",
   "producto": {
     "id": 1,
-    "nombre": "Laptop HP",
-    "stock": 13
+    "nombre": "Coca Cola",
+    "descripcion": "Bebida Gaseosa",
+    "stock": 15,
+    "precio": 2.5,
+    "categoria": {
+      "id": 1,
+      "nombre": "Bebidas",
+      "descripcion": "Líquidos para beber"
+    },
+    "proveedor": {
+      "id": 1,
+      "nombre": "Proveedor Uno",
+      "contacto": "contacto@proveedoruno.com",
+      "direccion": "Calle Principal 123"
+    }
   },
   "usuario": {
     "id": 2,
-    "nombre": "Dario"
+    "nombre": "Dario",
+    "correo": "dario@correo.com",
+    "rol": {
+      "id": 2,
+      "nombre": "ENCARGADO_INVENTARIO",
+      "descripcion": "Usuario que gestiona el inventario"
+    }
   }
 }
 ```
@@ -456,14 +577,34 @@
 | Usuario | Contraseña | Rol | Permisos |
 |---------|------------|-----|----------|
 | Juan | 123456 | ADMINISTRADOR | Acceso completo |
-| Dario | 123456 | ENCARGADO_INVENTARIO | Productos, categorías, proveedores, movimientos |
-| Anthony | 123456 | VENDEDOR | Solo consulta productos y categorías |
+| Ricardo | 778899 | ADMINISTRADOR | Acceso completo |
+| Dario | 112233 | ENCARGADO_INVENTARIO | Productos, categorías, proveedores, movimientos |
+| Anthony | 445566 | VENDEDOR | Solo consulta productos y categorías |
+
+# 🏪 DATOS REALES DEL SISTEMA
+
+## Productos Disponibles:
+- **Coca Cola** (S/. 2.50) - Stock: 17
+- **Papas Fritas** (S/. 1.20) - Stock: 30  
+- **Leche entera** (S/. 3.00) - Stock: 20
+- **Galletas Oreo** (S/. 1.50) - Stock: 75
+- **Agua Mineral** (S/. 1.00) - Stock: 50
+
+## Categorías:
+- **Bebidas** - Líquidos para beber
+- **Snacks** - Productos para picar  
+- **Lacteos** - Productos derivados de la leche
+
+## Proveedores:
+- **Proveedor Uno** - contacto@proveedoruno.com
+- **Proveedor Dos** - contacto@proveedordos.com
+- **Proveedor Tres** - contacto@proveedortres.com
 
 # 🌐 CONFIGURACIÓN PARA VALIDACIÓN CRUZADA
 
 ## URLs a usar:
 - **Cambiar** `localhost:8080` por tu URL de ngrok
-- **Ejemplo:** `https://abc123.ngrok.io/api/usuarios`
+- **Ejemplo:** `Al iniciar la clase.../api/usuarios`
 
 ## Headers importantes:
 - **Authorization:** `Bearer <token>`
