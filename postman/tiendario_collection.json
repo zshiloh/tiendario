@@ -9,7 +9,7 @@
 	},
 	"item": [
 		{
-			"name": "Auth",
+			"name": "Auth (Público)",
 			"item": [
 				{
 					"name": "Iniciar sesión",
@@ -109,10 +109,10 @@
 			]
 		},
 		{
-			"name": "Categorias",
+			"name": "Categorias (Mixto)",
 			"item": [
 				{
-					"name": "Insertar categoria",
+					"name": "Insertar categoria (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -157,7 +157,7 @@
 					"response": []
 				},
 				{
-					"name": "Actualizar categoria",
+					"name": "Actualizar categoria (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -185,7 +185,7 @@
 					"response": []
 				},
 				{
-					"name": "Eliminar categoria",
+					"name": "Eliminar categoria (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -277,7 +277,7 @@
 			]
 		},
 		{
-			"name": "Movimientos Stock",
+			"name": "Movimientos Stock (Admin + Encargado)",
 			"item": [
 				{
 					"name": "Insertar movimientos",
@@ -399,10 +399,10 @@
 			]
 		},
 		{
-			"name": "Productos",
+			"name": "Productos (Mixto)",
 			"item": [
 				{
-					"name": "Insertar producto",
+					"name": "Insertar producto (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -447,7 +447,7 @@
 					"response": []
 				},
 				{
-					"name": "Actualizar producto",
+					"name": "Actualizar producto (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -475,7 +475,7 @@
 					"response": []
 				},
 				{
-					"name": "Eliminar producto",
+					"name": "Eliminar producto (ADMIN + ENCARGADO)",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -570,7 +570,7 @@
 			]
 		},
 		{
-			"name": "Proveedores",
+			"name": "Proveedores (Admin + Encargador)",
 			"item": [
 				{
 					"name": "Insertar proveedor",
@@ -738,7 +738,7 @@
 			]
 		},
 		{
-			"name": "Roles",
+			"name": "Roles (Admnistrador)",
 			"item": [
 				{
 					"name": "Insertar rol",
@@ -915,7 +915,7 @@
 			]
 		},
 		{
-			"name": "Usuarios",
+			"name": "Usuarios (Admnistrador)",
 			"item": [
 				{
 					"name": "Insertar usuario",
@@ -1115,7 +1115,11 @@
 		},
 		{
 			"key": "ngrok",
-			"value": "URL"
+			"value": "",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			}
 		},
 		{
 			"key": "token",
