@@ -25,9 +25,9 @@
 ## INTEGRANTES
 ### GRUPO 1
 
-- **Juan Manuel Sarasi de la Cruz**
-- **Dario Yauli Patiño Chagua**
-- **Anthony Carlos Torre Lozano**
+-**Juan Manuel Sarasi de la Cruz**
+-**Dario Yauli Patiño Chagua**
+-**Anthony Carlos Torre Lozano**
 
 ---
 
