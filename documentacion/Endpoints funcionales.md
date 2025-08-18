@@ -2,7 +2,7 @@
 
 ## 🌐 URLs Base
 - **Desarrollo Local:** `http://localhost:8080`
-- **Ngrok:** `Colocar al iniciar la clase...`
+- **Ngrok:** `https://5e84d1b57746.ngrok-free.app`
 
 ---
 
@@ -604,7 +604,7 @@
 
 ## URLs a usar:
 - **Cambiar** `localhost:8080` por tu URL de ngrok
-- **Ejemplo:** `Al iniciar la clase.../api/usuarios`
+- **Ejemplo:** `https://5e84d1b57746.ngrok-free.app/api/usuarios`
 
 ## Headers importantes:
 - **Authorization:** `Bearer <token>`

@@ -54,7 +54,7 @@ Deberías ver en el panel izquierdo:
 ### 2.2 Variables disponibles
 Deberías ver:
 - **`localhost`**: `http://localhost:8080`
-- **`ngrok`**: `Al iniciar la clase...` (URL que te proporcionamos)
+- **`ngrok`**: `https://5e84d1b57746.ngrok-free.app` (URL que te proporcionamos)
 - **`token`**: (vacío, se llena automáticamente)
 
 ### 2.3 ¿Necesitas cambiar la URL de ngrok?
@@ -297,19 +297,6 @@ Si la URL de ngrok es diferente:
 - [ ] Movimientos de stock actualizan inventario
 - [ ] Datos se persisten correctamente
 - [ ] Relaciones entre entidades funcionan
-
----
-
-## 🎯 TIEMPO ESTIMADO POR PASO
-
-- **Paso 1-2:** Importar y configurar (5 min)
-- **Paso 3:** Login inicial (3 min)
-- **Paso 4:** Pruebas básicas (7 min)
-- **Paso 5:** Pruebas de seguridad (5 min)
-- **Paso 6:** Movimientos stock (5 min)
-- **Paso 7:** Documentar (5 min)
-
-**TOTAL: ~30 minutos**
 
 ---
 

@@ -1,5 +1,42 @@
 # Tiendario - Sistema de Gestión de Inventario
 
+# ZEGEL
+
+---
+
+<div align="center">
+
+## CURSO
+### COMPUTACION E INFORMATICA
+
+---
+
+## PROYECTO FINAL
+### SISTEMA DE GESTIÓN DE INVENTARIO "TIENDARIO"
+### ARQUITECTURA MONOLÍTICA CON SPRING BOOT
+
+---
+
+## PROFESOR
+### CABALLERO CHIPANA ROMMEL RICARDO 
+
+---
+
+## INTEGRANTES
+### GRUPO 1
+
+- **[Juan Manuel Sarasi de la Cruz]**
+- **[Dario Yauli Patiño Chagua]**
+- **[Anthony Carlos Torre Lozano]**
+
+---
+
+**LIMA - PERÚ**
+
+</div>
+
+---
+
 ## 📋 Descripción del Proyecto
 
 **Tiendario** es una API REST desarrollada con Spring Boot que proporciona una solución completa para la gestión de inventario de una tienda. El sistema permite administrar productos, categorías, proveedores, usuarios y realizar un seguimiento detallado de los movimientos de stock.
@@ -166,7 +203,7 @@ mvn spring-boot:run
 
 ### Acceso a la Documentación
 - **Swagger UI (Local):** http://localhost:8080/swagger-ui.html
-- **Swagger UI (Ngrok):** Al iniciar la clase.../swagger-ui.html
+- **Swagger UI (Ngrok):** https://5e84d1b57746.ngrok-free.app/swagger-ui.html
 - **API Docs:** http://localhost:8080/v3/api-docs
 
 ### Para Validación Cruzada
