@@ -58,8 +58,8 @@ Deberías ver:
 - **`token`**: (vacío, se llena automáticamente)
 
 ### 2.3 ¿Necesitas cambiar la URL de ngrok?
-Si la URL de ngrok es diferente:
-1. **Cambiar valor "Initial value"** Donde dice `URL` por la nueva URL
+Si la URL de ngrok no se encuentra o es diferente:
+1. **Cambiar valor "Initial value"** Donde dice `URL` cambia por la nueva URL
 2. **Valor "Current value"** Se coloca automaticamente `Si no lo hace, coloca la URL manualmente`
 3. **Clic "Save" o CTRL + S**
 
