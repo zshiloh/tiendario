@@ -181,7 +181,7 @@ Si la URL de ngrok no se encuentra o es diferente:
 ```json
 {
   "nombre": "Anthony",
-  "contrasena": "123456"
+  "contrasena": "445566"
 }
 ```
 3. **Clic "Send"**
