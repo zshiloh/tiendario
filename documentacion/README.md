@@ -7,27 +7,27 @@
 <div align="center">
 
 ## CURSO
-### COMPUTACION E INFORMATICA
+### Computación e Informatica
 
 ---
 
 ## PROYECTO FINAL
-### SISTEMA DE GESTIÓN DE INVENTARIO "TIENDARIO"
-### ARQUITECTURA MONOLÍTICA CON SPRING BOOT
+### Sistema de Gestión de Inventario "TIENDARIO"
+### Arquitectura monolítica Spring Boot
 
 ---
 
 ## PROFESOR
-### CABALLERO CHIPANA ROMMEL RICARDO 
+**Caballero Chipana Rommel Ricardo**
 
 ---
 
 ## INTEGRANTES
 ### GRUPO 1
 
-- **[Juan Manuel Sarasi de la Cruz]**
-- **[Dario Yauli Patiño Chagua]**
-- **[Anthony Carlos Torre Lozano]**
+**Juan Manuel Sarasi de la Cruz**
+**Dario Yauli Patiño Chagua**
+**Anthony Carlos Torre Lozano**
 
 ---
 
