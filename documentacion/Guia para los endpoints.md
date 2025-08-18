@@ -7,7 +7,7 @@
 ### ✅ Lo que necesitas tener:
 - **Postman** instalado en tu computadora
 - **Archivo** descargar `tiendario_collection.json` (te lo proporcionamos)
-- **URL de ngrok** (te la proporcionamos el día de la validación)
+- **URL de ngrok** `https://5e84d1b57746.ngrok-free.app` (te lo proporcionamos)
 - **20-30 minutos** para realizar todas las pruebas
 
 ---
